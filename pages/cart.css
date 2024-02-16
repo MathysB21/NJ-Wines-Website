@@ -1,0 +1,255 @@
+.drawer-content {
+    background-image: url("../images/Our_Win_ban_img_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.master-container {
+    margin: 10% auto 0;
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	width: 80%;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.cart-container {
+	left: 0;
+	width: 60%;
+    overflow-y: auto;
+}
+
+.checkout-container {
+	right: 0;
+	width: 40%;
+    border-left: 1px solid #efeff3;
+}
+
+
+.title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid #efeff3;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+/* cart */
+.pricing {
+    width: 70px;
+    padding-left: 10px;
+}
+
+.cart .products {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.cart .products .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(239, 239, 239);
+    transition: all .2s ease-in-out;
+}
+
+.product:hover {
+    background-color: #00000008;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product .amount p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-right: 11px;
+    margin-left: 10px;
+}
+
+.name h3 {
+    font-size: 20px;
+    color: #C5A86E;
+}
+
+.name {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.image {
+    margin-right: 10px;
+}
+
+.name p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+}
+
+/* Checkout */
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.subtotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.shipping {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    background-color: #efeff3;
+}
+
+.checkout--footer h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+}
+
+.check-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.checkout-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 8px;
+    background: white;
+    border-radius: 7px;
+    border: 2px solid black;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
+}
+
+.checkout-btn:hover {
+    border: 2px solid #C5A86E;
+    background-color: #C5A86E;
+    color: #fff;
+}
+
+.rand {
+    margin-right: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background: #c2c2c2;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(63, 63, 63);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2C3136;
+}
+
+.btn-circle {
+    box-sizing: content-box;
+    height: 20px;
+    width: 20px;
+    border-radius: 9999px;
+    padding: 0px;
+}
+
+.btn {
+    min-height: 10px;
+}
+
+.btn-outline {
+    box-sizing: content-box;
+    border-color: #000;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    margin: auto 0;
+}
+
+.btn-outline:hover {
+    border-color: #f00;
+    background-color: transparent;
+}
+.quan.btn-outline:hover {
+    border-color: #C5A86E;
+    background-color: transparent;
+}
+
+path {
+    stroke: #000;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover path {
+    stroke: #f00;
+}
+.quan.btn-outline:hover path {
+    stroke: #C5A86E;
+}
+
+.btn-circle:hover path {
+    stroke: #f00;
+}
+.quan.btn-circle:hover path {
+    stroke: #C5A86E;
+}
+
+.smaller-path {
+    transform: scale(0.6);
+    transform-origin: center;
+}

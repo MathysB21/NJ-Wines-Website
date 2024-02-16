@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.main-bg {
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    margin: 8% auto 10% auto;
+    box-shadow: 0px 3px 20px 0px #8080802b;
+    border-radius: 25px;
+    transform: translate(0%, 21%, 21%);
+}
+
+.sections {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.left-section {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    float: left;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.right-section {
+    box-sizing: content-box;
+    background-image: url(../images/vineyard-mountain.jpg);
+    height: 100%;
+    width: 50%;
+    float: right;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Text {
+    display: block;
+    /* margin-top: 55px;
+    margin-left: 52px; */
+    margin: 30px;
+    text-align: left;
+}
+
+.darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000089;
+    border-top-right-radius: 24.5px;
+    border-bottom-right-radius: 24.5px;
+}
+
+.Text h1 {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.Text h2 {
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+p.flavours {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+p.details {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+p.details-mobile {
+    display: none;
+}
+
+button.read-more {
+    display: none;
+}
+
+p.price {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 13px;
+    padding-top: 12px;
+}
+
+p.price-mobile {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    padding: 6px;
+}
+
+.but-buy {
+    display: inline-flex;
+    padding-top: 15px;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid #000;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 11px;
+    padding-top: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    width: 140px;
+    height: 38px;
+    text-align: center;
+    border-radius: 300px;
+    margin-top: 1px;
+    -webkit-transition: color .15s;
+    -moz-transition: color .15s;
+    -o-transition: color .15s;
+    transition: 0.55s;
+}
+
+.button-mobile {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: fit-content;
+    font-size: 10px;
+    padding: 6px 7px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+
+    &:hover {
+        color: #CDAE6A;
+        text-shadow: none;
+        border: 2px solid #CDAE6A;
+        background-color: #000000cd;
+    }
+}
+
+/* .button p {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin-top: 11px;
+    cursor: pointer;
+    font-weight: 700;
+}*/
+
+.button:hover {
+    border: 2px solid #CDAE6A;
+    color: #CDAE6A;
+    background-color: #000000cd;
+}
+/* .button p:hover {
+    color: #CDAE6A;
+} */
+
+button:focus {
+    outline: none;
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 9% 0.2fr 2.7fr 0.2fr 9%;
+    grid-template-rows: 9% 0.2fr 1.5fr 7.4%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo_image . . . ."
+        ". . . . ."
+        ". . wine_image . ."
+        ". . . . .";
+}
+
+.logo_image {
+    grid-area: logo_image;
+}
+
+.wine_image {
+    grid-area: wine_image;
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: fit-content;
+    font-size: 10px;
+    padding: 6px 7px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background: none repeat scroll 0 0 #CDAE6A;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        z-index: -1;
+        transition: all .5s ease 0s;
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+
+    &:hover {
+        color: #CDAE6A;
+        text-shadow: none;
+        border: 2px solid #CDAE6A;
+        background-color: #000000cd;
+
+        &:after {
+            height: 420%;
+        }
+    }
+
+    &.themeA:after {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+}
+
+.x-button {
+    padding: 0px 10px;
+    transition: all .2s ease-in-out;
+}
+
+.x-button:hover {
+    border-radius: 50px;
+    background-color: white;
+    color: #CDAE6A;
+}
+
+.contain_wine {
+    /* padding: 8px; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "wine_name wine_name wine_name"
+        "wine_range wine_range wine_range"
+        "wine_flavours wine_flavours wine_flavours"
+        "wine_details wine_details wine_details"
+        "wine_price wine_price ."
+        ". . .";
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1290px) {
+
+    /* CSS rules for screens up to 1024px wide */
+    p.details {
+        display: none;
+    }
+
+    button.read-more {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    .Text h1 {
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 3px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .Text h2 {
+        color: white;
+        letter-spacing: 2px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* CSS rules for screens up to 1024px wide */
+    .contain_wine {
+        /* padding: 8px; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "wine_name wine_name wine_name"
+            "wine_range wine_range wine_range"
+            "wine_flavours wine_flavours wine_flavours"
+            "wine_details wine_details wine_details"
+            "wine_price wine_price ."
+            ". . .";
+        max-width: 100%;
+    }
+
+    .Text h1 {
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 3px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .Text h2 {
+        color: white;
+        letter-spacing: 2px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* CSS rules for screens up to 1024px wide */
+    .main-bg {
+        background-color: white;
+        width: 60%;
+        height: 70%;
+        margin: 12% auto 10% auto;
+        box-shadow: 0px 3px 20px 0px #8080802b;
+        border-radius: 25px;
+        transform: translate(0%, 21%, 21%);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .main-bg {
+        background-color: white;
+        width: 80%;
+        height: 70%;
+        margin: 16% auto 10% auto;
+        box-shadow: 0px 3px 20px 0px #8080802b;
+        border-radius: 25px;
+        transform: translate(0%, 21%, 21%);
+    }
+}
+
+.mobile-info {
+    display: none;
+}
+
+@media screen and (max-width: 430px) {
+
+    /* CSS rules for screens up to 1024px wide */
+    .contain_wine {
+        display: none;
+    }
+
+    .main-bg {
+        display: none;
+    }
+
+    .mobile-info {
+        padding: 20px;
+        display: block;
+        background-color: white;
+        width: 80%;
+        height: fit-content;
+        margin: 34% auto 10% auto;
+        box-shadow: 0px 3px 20px 0px #8080802b;
+        border-radius: 25px;
+        transform: translate(0%, 21%, 21%);
+    }
+
+    p.details-mobile {
+        display: block;
+        color: black;
+        font-family: 'Nunito', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        margin-top: 3px;
+    }
+}
+
+.mobile-info h1 {
+    color: #CDAE6A;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 3px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.mobile-info h2 {
+    color: #CDAE6A;
+    letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.mobile-info .flavours {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.wine_price {
+    grid-area: wine_price;
+}
+
+/* .wine_buy {
+    grid-area: wine_buy;
+} */
+
+.wine_details {
+    grid-area: wine_details;
+}
+
+.wine_name {
+    grid-area: wine_name;
+}
+
+.wine_range {
+    grid-area: wine_range;
+}
+
+.wine_flavours {
+    grid-area: wine_flavours;
+}

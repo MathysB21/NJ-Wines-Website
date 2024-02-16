@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niel Joubert Wines</title>
+    <link rel="icon" type="image/png" href="../images/logo-min.png">
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="drawer bg-[#2C3136]">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col bg-white">
+            <!-- Navbar -->
+            <div class="w-full navbar bg-base-300 fixed z-50">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-6 h-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div class="flex-1 px-2 mx-2">
+                    <img src="../images/logo.png" alt="Niel Joubert Wines" class="max-h-14 my-2">
+                </div>
+                <div class="flex-none hidden lg:block">
+                    <ul class="menu menu-horizontal">
+                        <!-- Navbar menu content here -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="wines.html">Our Wines</a></li>
+                        <li><a href="loginRegister.php">Login</a></li>
+                        <li><a href="cart.php">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Page content here -->
+            <!-- Hero image -->
+            <div class="hero h-screen bg-cover bg-center" style="background-image: url(../images/us.jpeg);">
+                <div class="hero-overlay bg-opacity-40 max-h-fit"></div>
+                <div class="hero-content h-screen text-center text-neutral-content relative">
+                    <div class="max-w-md flex flex-col justify-center items-center">
+                        <h1 class="mb-5 text-6xl text-white tracking-widest font-light font-cg uppercase">This is Us
+                        </h1>
+                        <div class="items-center mt-4">
+                            <svg class="levitating-arrow w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                            <svg class="levitating-arrow w-10 h-10 text-white -my-2 second-arrow"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content over here -->
+            <div class="flex flex-col w-full lg:flex-row text-black">
+                <div class="grid flex-grow card place-items-center p-11 align-middle justify-center">
+                    <h2 class="font-cg text-4xl m-4 uppercase">About Us</h2>
+                    <p class="p-1 text-lg">
+                        Klein Simonsvlei was established by Piet Joubert, who acquired the property in 1898 with the
+                        main focus of cultivating fruit. His son Daniel joined him at the farm when he was 22 years old,
+                        and later Niel, Daniel's son, took over the management in 1950. Although some grapes were grown
+                        at the beginning of the century, production remained small until the fourth generation, when
+                        Daan assumed full control in 1981.
+                    </p>
+                    <div>
+                        <input type="checkbox" class="read-more-state" id="part-2" />
+                        <p class="read-more-wrap p-1 text-lg">
+                            <span class="read-more-target">
+                                The family plays a significant role in the current operations. Daan leads the team,
+                                serving
+                                as
+                                both the viticulturist and fruit farmer. Niel, who is a qualified winemaker, manages the
+                                financial aspects and supports Daan in farming activities. Mari, their sister, handles
+                                sales,
+                                distribution, and social initiatives such as a staff children's crèche and an
+                                after-school
+                                club
+                                through the Pebbles Project.
+                                <br>
+                                Eleanor, Daan's wife, provides assistance whenever necessary and plays a vital
+                                supportive
+                                role.
+                                Christine-Marié, Daan's mother, resides on the property in a beautiful garden setting
+                                and
+                                takes
+                                care of the gardens.
+                            </span>
+                        </p>
+                        <label for="part-2" class="read-more-trigger themeA"></label>
+                    </div>
+                </div>
+                <div class="invisible divider lg:divider-horizontal"></div>
+                <div class="card p-9 mx-auto">
+                    <div class="relative overflow-hidden">
+                        <img id="animated-image" src="../images/fam-table.jpg" alt=""
+                            class="opacity-0 max-w-xl transform translate-x-full">
+                    </div>
+                </div>
+            </div>
+            <!-- Meet the Team section -->
+            <div class=" w-full grid justify-center items-center">
+                <h1 class="font-cg text-black text-4xl text-center uppercase">Meet the Team</h1>
+                <main class="page-content">
+                    <div id="niel" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Niel Joubert</h2>
+                            <p class=" capitalize font-nunito">Director / General Manager</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:niel@nieljoubert.co.za">niel@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="daan" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Daan Joubert</h2>
+                            <p class=" capitalize font-nunito">Owner / Viticulturist</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:daan@nieljoubert.co.za">daan@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="mari" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Mari Joubert</h2>
+                            <p class=" capitalize font-nunito">Sales & Operations Manager</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:mari@nieljoubert.co.za">mari@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="erni" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Erni Leicht</h2>
+                            <p class=" capitalize font-nunito">winemaker</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:erni@nieljoubert.co.za">erni@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="sam" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Samantha Loots</h2>
+                            <p class=" capitalize font-nunito">Office Manager</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:accounts@nieljoubert.co.za">accounts@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="charles" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Charles Withington</h2>
+                            <p class=" capitalize font-nunito">Export Manager</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:charles@nieljoubert.co.za">charles@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="michelle" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Michelle Coetzee</h2>
+                            <p class=" capitalize font-nunito">Assistant Winemaker</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:michelle@nieljoubert.co.za">michelle@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                    <div id="sharne" class="cardd">
+                        <div class="content">
+                            <h2 class="title">Sharne janse van Rensburg</h2>
+                            <p class=" capitalize font-nunito">Local Sales & Marketing</p>
+                            <a class="lowercase text-[#CDAE6A] font-nunito"
+                                href="mailto:sharne@nieljoubert.co.za">sharne@nieljoubert.co.za</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+
+            <!-- Footer -->
+            <footer id="contact"
+                class="footer footer-center relative p-10 bg-white text-black bg-footer-background bg-cover bg-center mt-5">
+                <div class="absolute inset-0 bg-white opacity-75 -z-1"></div>
+                <div class="relative z-10">
+                    <div>
+                        <h2 class="font-cg text-4xl">Get In Touch</h2>
+                        <p class="p-1 font-nunito text-sm">Every bottle filled with pride for your enjoyment</p>
+                        <p class="m-4">
+                            Klein Simonsvlei Farm
+                            Klapmuts – Simondium Road, Klapmuts, 7625
+                            Western Cape, South Africa
+                        </p>
+                        <div class="tooltip tooltip-right" data-tip="Click to Copy">
+                            <a href="#" class="text-[#CDAE6A] block" onclick="copyNumber()">+27(0)21 875 5419</a>
+                        </div>
+                        <a href="mailto:wine@nieljoubert.co.za" class="text-[#CDAE6A] block">wine@nieljoubert.co.za</a>
+                    </div>
+                    <div class="grid grid-flow-col gap-4">
+                        <!-- The links in the footer -->
+                        <a class="link link-underline" href="about-us.html">About us</a>
+                    </div>
+                    <div>
+                        <p>Copyright © 2023 - Created by Mathys Basson</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="drawer-side">
+            <label for="my-drawer-3" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 bg-base-100">
+                <!-- Sidebar content here -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="wines.html">Our Wines</a></li>
+                <li><a href="loginRegister.php">Login</a></li>
+                <li><a href="cart.php">Cart</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

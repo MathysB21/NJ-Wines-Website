@@ -1,0 +1,759 @@
+/* Dark Gray: #2C3136 */
+/* Blue Gray: #4A6380 */
+/* Gold: #C5A86E */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.levitating-arrow {
+    animation: levitate 2.9s ease-in-out infinite;
+}
+
+.second-arrow {
+    animation-delay: 0.4s;
+}
+
+@keyframes levitate {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Mod the scrollbar to be pretty */
+::-webkit-scrollbar {
+    width: 20px;
+    background: #c2c2c2;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(63, 63, 63);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2C3136;
+    border-radius: 10px;
+}
+
+.shadowing {
+    padding: 25px;
+    text-align: center;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 15px 15px 30px #ababab,
+        -15px -15px 30px #ffffff;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a.animBtn:link,
+a.animBtn:visited {
+    position: relative;
+    display: block;
+    width: 180px;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    border: 2px solid #CDAE6A;
+    background: rgba(255, 255, 255, 0.2);
+    color: #CDAE6A;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background: none repeat scroll 0 0 #CDAE6A;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        z-index: -1;
+        transition: all .5s ease 0s;
+    }
+
+    &:hover {
+        color: #fff;
+        text-shadow: none;
+
+        &:after {
+            height: 420%;
+        }
+    }
+}
+
+a.animBtn {
+    &.themeA:after {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+}
+
+a.animBtnCard:link,
+a.animBtnCard:visited {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 4px 10px;
+    /* border: 2px solid #CDAE6A; */
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    /* color: #CDAE6A; */
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background: none repeat scroll 0 0 #CDAE6A;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        z-index: -1;
+        transition: all .5s ease 0s;
+    }
+
+    &:hover {
+        color: #fff;
+        text-shadow: none;
+        border: 2px solid #CDAE6A;
+
+        &:after {
+            height: 420%;
+        }
+    }
+}
+
+a.animBtnCard {
+    &.themeA:after {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+}
+
+@keyframes fly-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fly-in-from-right {
+    animation-name: fly-in-from-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.bg-footer-background {
+    background-image: url('../images/clinkedglasses-bw.jpg');
+}
+
+.link-underline {
+    text-decoration-line: none;
+    transition: color ease-in-out 0.25s;
+}
+
+.link-underline:hover {
+    color: #CDAE6A;
+}
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: 'Rubik', sans-serif;
+    --font-serif: 'Cardo', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: medium;
+    font-family: 'Nunito', 'sans-serif';
+    text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .page-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .page-content-lifestyle {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+    .page-content-christine {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+}
+
+.cardd {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background: linear-gradient(180deg, #f1f1f1, #ededed, #e1e1e1, #cfcfcf, #bababa, #a2a2a2, #8b8b8b, #757575, #616161, #525252, #494949, #454545);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.2), 0 16px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+    .cardd {
+        height: 350px;
+    }
+}
+
+.cardd:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+
+.cardd:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+#niel:before {
+    background-image: url(../images/Team-Niel-Joubert1.jpg);
+}
+
+#daan:before {
+    background-image: url(../images/Team-Daan-Joubert1.jpg);
+}
+
+#mari:before {
+    background-image: url(../images/Team-Mari-Joubert1.jpg);
+}
+
+#erni:before {
+    background-image: url(../images/Team-Erni-Leicht1.jpg);
+}
+
+#sam:before {
+    background-image: url(../images/Team-Samantha-Loots1.jpg);
+}
+
+#charles:before {
+    background-image: url(../images/Team-Charles-Withington1.jpg);
+}
+
+#michelle:before {
+    background-image: url(../images/Michelle-Coetzee.jpg);
+}
+
+#sharne:before {
+    background-image: url(../images/Sharne-Janse-van-Rensburg.jpg);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.content>*+* {
+    margin-top: 1rem;
+}
+
+.title {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.btnn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.btnn:hover {
+    background-color: #0d0d0d;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+    .cardd:after {
+        transform: translateY(0);
+    }
+
+    .content {
+        transform: translateY(calc(100% - 4.5rem));
+    }
+
+    .content>*:not(.title) {
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+
+    .cardd:hover,
+    .cardd:focus-within {
+        align-items: center;
+    }
+
+    .cardd:hover:before,
+    .cardd:focus-within:before {
+        transform: translateY(-4%);
+    }
+
+    .cardd:hover:after,
+    .cardd:focus-within:after {
+        transform: translateY(-50%);
+    }
+
+    .cardd:hover .content,
+    .cardd:focus-within .content {
+        transform: translateY(0);
+    }
+
+    .cardd:hover .content>*:not(.title),
+    .cardd:focus-within .content>*:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+    }
+
+    .cardd:focus-within:before,
+    .cardd:focus-within:after,
+    .cardd:focus-within .content,
+    .cardd:focus-within .content>*:not(.title) {
+        transition-duration: 0s;
+    }
+}
+
+/* Accordion Styling */
+.accordion dl,
+.accordion-list {
+    border: 1px solid #eee;
+
+    /* &:after {
+        content: "";
+        display: block;
+        height: 1em;
+        width: 100%;
+        background-color: darken(#38cc70, 10%);
+    } */
+}
+
+.accordion dd,
+.accordion__panel {
+    background-color: #fff;
+    color: #0d0d0d;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.accordion p {
+    padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+    position: relative;
+    background-color: #eee;
+}
+
+.containerAccordion {
+    max-width: 100%;
+}
+
+.accordionTitle,
+.accordion__Heading {
+    position: relative;
+    background-color: #fff;
+    text-align: left;
+    font-family: 'Cormorant Garamond', 'serif';
+    font-weight: 500;
+    font-size: 28px;
+    padding: 0.5em;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #ddd;
+
+    &:before {
+        content: "+";
+        font-size: 1.2em;
+        font-weight: 600;
+        line-height: 0.5em;
+        margin-right: 1.25em;
+        margin-left: 20px;
+        margin-top: 13px;
+        float: left;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-color: #f1f1f1;
+        color: #CDAE6A;
+    }
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+    background-color: #f3f3f3;
+    color: #CDAE6A;
+
+    &:before {
+        transform: rotate(-225deg);
+    }
+}
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+
+    max-height: fit-content;
+    transition: max-height 1s;
+
+
+    @media screen and (min-width:48em) {
+        max-height: fit-content;
+        transition: max-height 0.5s
+    }
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+    max-height: auto;
+}
+
+.animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+        transform-origin: 50% 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .5s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    display: block;
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'Show more';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'Show less';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 180px;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    border: 2px solid #CDAE6A;
+    background: rgba(255, 255, 255, 0.2);
+    color: #CDAE6A;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    transition: all .5s ease;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background: none repeat scroll 0 0 #CDAE6A;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        z-index: -1;
+        transition: all .5s ease 0s;
+    }
+
+    &:hover {
+        color: #fff;
+        text-shadow: none;
+
+        &:after {
+            height: 420%;
+        }
+    }
+
+    &.themeA:after {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+}
+
+#estate-chenin-blanc:before {
+    background-image: url('../images/1-Niel-Joubert-Estate-Chenin-Blanc-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#estate-sauvignon-blanc:before {
+    background-image: url('../images/2-Niel-Joubert-Estate-Sauvignon-Blanc-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#estate-chardonnay:before {
+    background-image: url('../images/3-Niel-Joubert-Estate-Chardonnay-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#estate-pinotage:before {
+    background-image: url('../images/4-Niel-Joubert-Estate-Pinotage-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#estate-shiraz:before {
+    background-image: url('../images/5-Niel-Joubert-Estate-Shiraz-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#estate-merlot:before {
+    background-image: url('../images/6-Niel-Joubert-Estate-Merlot-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#estate-cabernet-sauvignon:before {
+    background-image: url('../images/7-Niel-Joubert-Estate-Cabernet-Sauvignon-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 1.2fr 0.2fr 1.6fr 0.2fr 1.2fr;
+    grid-template-rows: 0.3fr 2.1fr 0.3fr 0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Left {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.Right {
+    grid-area: 2 / 4 / 3 / 6;
+}
+
+.Selected {
+    grid-area: 1 / 2 / 4 / 5;
+}
+
+/* Lifestyle */
+#lifestyle-blanc-de-noir:before {
+    background-image: url('../images/1-Niel-Joubert-Blanc-de-Noir-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lifestyle-gruner-veltliner:before {
+    background-image: url('../images/2-Niel-Joubert-Gruner-Veltliner-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lifestyle-cinsault-grenache-noir:before {
+    background-image: url('../images/3-Niel-Joubert-Cinsault-Grenache-Noir-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Christine Marie */
+#christine-marie-first-kiss:before {
+    background-image: url('../images/1-Niel-Joubert-Christine-MariFirst-Kiss.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#christine-marie-cap-classique:before {
+    background-image: url('../images/2-Niel-Joubert-Christine-Marie-Cap-Classique.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Reserve */
+#reserve-grenache-blanc:before {
+    background-image: url('../images/1-Niel-Joubert-Reserve-Grenache-Blanc-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reserve-chenin-blanc:before {
+    background-image: url('../images/2-Niel-Joubert-Reserve-Chenin-Blanc-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reserve-chardonnay:before {
+    background-image: url('../images/3-Niel-Joubert-Reserve-Chardonnay-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reserve-shiraz:before {
+    background-image: url('../images/4-Niel-Joubert-Reserve-Shiraz-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reserve-tempranillo:before {
+    background-image: url('../images/5-Niel-Joubert-Reserve-Tempranillo-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reserve-cabernet-sauvignon:before {
+    background-image: url('../images/6-Niel-Joubert-Reserve-Cabernet-Sauvignon-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#reserve-proprietor-malbec:before {
+    background-image: url('../images/7-Niel-Joubert-Proprietor-Malbec-NV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#table {
+    margin-top: 15%;
+}

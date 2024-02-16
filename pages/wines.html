@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niel Joubert Wines</title>
+    <link rel="icon" type="image/png" href="../images/logo-min.png">
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="drawer bg-[#2C3136]">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content bg-white">
+            <!-- Navbar -->
+            <div class="w-full navbar bg-base-300 fixed z-50">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-6 h-6 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+                <div class="flex-1 px-2 mx-2">
+                    <img src="../images/logo.png" alt="Niel Joubert Wines" class="max-h-14 my-2">
+                </div>
+                <div class="flex-none hidden lg:block">
+                    <ul class="menu menu-horizontal">
+                        <!-- Navbar menu content here -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="wines.html">Our Wines</a></li>
+                        <li><a href="loginRegister.php">Login</a></li>
+                        <li><a href="cart.php">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Page content here -->
+            <div class="hero h-screen bg-cover bg-center"
+                style="background-image: url(../images/Our_Win_ban_img_01.jpg);">
+                <div class="hero-overlay bg-opacity-40 max-h-fit"></div>
+                <div class="hero-content h-screen text-center text-neutral-content relative">
+                    <div class="max-w-md flex flex-col justify-center items-center">
+                        <h1 class="mb-5 text-6xl text-white tracking-widest font-light font-cg uppercase">Buy Our Wines
+                        </h1>
+                        <div class="items-center mt-4">
+                            <svg class="levitating-arrow w-10 h-10 text-white" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                            <svg class="levitating-arrow w-10 h-10 text-white -my-2 second-arrow"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Accordion -->
+            <h1 class="font-cg text-4xl text-center text-black m-4 uppercase">Ranges</h1>
+            <div class="w-full h-fit">
+                <div class="containerAccordion">
+                    <div class="accordion">
+                        <dl>
+                            <!-- Lifestyle Range -->
+                            <dt>
+                                <a href="#accordion2" aria-expanded="false" aria-controls="accordion2"
+                                    class="accordion-title accordionTitle js-accordionTrigger uppercase tracking-wider">
+                                    Lifestyle Range</a>
+                            </dt>
+                            <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                                <!-- Content underneath -->
+                                <div class="contain">
+                                    <div class="Left">
+                                        <img src="../images/cinsault-grenache-noir.jpeg">
+                                    </div>
+                                    <div class="Right">
+                                        <img src="../images/tempranillo.jpeg">
+                                    </div>
+                                    <div class="Selected">
+                                        <img src="../images/gruner-veltliner.jpeg">
+                                    </div>
+                                </div>
+                                <p class="w-2/3 text-center text-lg mx-auto">
+                                    Experience a new and refreshing collection of wines with our Lifestyle Range. Crafted with passion and innovation, these wines offer a delightful journey of flavors, perfect for those seeking a unique and adventurous wine experience.
+                                </p>
+                                <div class=" w-full grid justify-center items-center">
+                                    <main class="page-content page-content-lifestyle">
+                                        <!-- Cards -->
+                                        <div id="lifestyle-blanc-de-noir" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Lifestyle Blanc De Noir</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2022</span>
+                                                    strawberry
+                                                    candy floss
+                                                    rose water
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="lifestyle-gruner-veltliner" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Lifestyle Grüner Veltliner</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2022</span> <br>
+                                                    peaches & cream <br>
+                                                    ripe fruits <br>
+                                                    vanilla beans
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="lifestyle-cinsault-grenache-noir" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Lifestyle Cinsault-Grenache Noir</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2020</span> <br>
+                                                    raspberry
+                                                    red cherry
+                                                    red plums
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+
+                                    </main>
+                                </div>
+                            </dd>
+
+
+                            <!-- Estate Range -->
+                            <dt>
+                                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1"
+                                    class="accordion-title accordionTitle js-accordionTrigger uppercase tracking-wider">Estate
+                                    Range</a>
+                            </dt>
+                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                                <!-- Content underneath -->
+                                <p class="w-2/3 text-center text-lg mx-auto">
+                                    Our Estate Range represents the essence of Niel Joubert wines, showcasing the timeless classics and essential varietals. Each bottle is a reflection of our rich heritage, meticulous craftsmanship, and commitment to delivering exceptional quality to wine enthusiasts worldwide.
+                                </p>
+                                <div class=" w-full grid justify-center items-center">
+                                    <main class="page-content">
+                                        <!-- Cards -->
+                                        <div id="estate-chenin-blanc" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Chenin Blanc</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2022</span> <br>
+                                                    passionfruit <br>
+                                                    grapefruit <br>
+                                                    green apple <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="estate-sauvignon-blanc" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Sauvignon Blanc</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2022</span> <br>
+                                                    white peach <br>
+                                                    passionfruit <br>
+                                                    orange blossom <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="estate-chardonnay" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Chardonnay</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2021</span> <br>
+                                                    citrus <br>
+                                                    biscotti <br>
+                                                    nuts <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="estate-pinotage" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Pinotage</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2018</span> <br>
+                                                    dark berry <br>
+                                                    prunes <br>
+                                                    vanilla <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="estate-shiraz" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Shiraz</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2019</span> <br>
+                                                    leather <br>
+                                                    tobacco <br>
+                                                    prunes <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="estate-merlot" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Merlot</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2021</span> <br>
+                                                    tomato stew <br>
+                                                    ripe plums <br>
+                                                    raspberry <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="estate-cabernet-sauvignon" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Estate Cabernet Sauvignon</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2019</span> <br>
+                                                    dark berry <br>
+                                                    plums <br>
+                                                    vanilla <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+
+                                    </main>
+                                </div>
+                            </dd>
+
+
+                            <!-- Christine Marie Range -->
+                            <dt>
+                                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3"
+                                    class="accordion-title accordionTitle js-accordionTrigger tracking-wider">
+                                    CHRISTINE MARIÉ RANGE</a>
+                            </dt>
+                            <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                                <!-- Content underneath -->
+                                <p class="w-2/3 text-center text-lg mx-auto">
+                                    Discover the perfect wines for gifting and celebrating special occasions with our Christine Marie Range. Thoughtfully crafted and elegantly presented, these wines embody the art of giving, making them a memorable choice for those who appreciate sophistication and refinement.
+                                </p>
+                                <div class=" w-full grid justify-center items-center">
+                                    <main class="page-content page-content-christine">
+                                        <!-- Cards -->
+                                        <div id="christine-marie-first-kiss" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Christine Marié first kiss</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2012</span> <br>
+                                                    melon <br>
+                                                    ginger <br>
+                                                    sultana <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="christine-marie-cap-classique" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Christine Marié cap classique</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2021</span> <br>
+                                                    honey <br>
+                                                    stone fruit <br>
+                                                    pineapple <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+
+                                    </main>
+                                </div>
+                            </dd>
+
+                            <!-- Reserve Range -->
+                            <dt>
+                                <a href="#accordion4" aria-expanded="false" aria-controls="accordion4"
+                                    class="accordion-title accordionTitle js-accordionTrigger uppercase tracking-wider">
+                                    Reserve Range
+                                </a>
+                            </dt>
+                            <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                                <!-- Content underneath -->
+                                <p class="w-2/3 text-center text-lg mx-auto">
+                                    Indulge in the epitome of fine winemaking with our Reserve Range. Meticulously handcrafted from carefully selected vineyards, these wines represent the pinnacle of our winemakers' expertise. With their exquisite complexity and unparalleled depth, our Reserve Range wines are tailored for the discerning connoisseurs who seek extraordinary tasting experiences.
+                                </p>
+                                <div class=" w-full grid justify-center items-center">
+                                    <main class="page-content">
+                                        <!-- Cards -->
+                                        <div id="reserve-grenache-blanc" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve grenache blanc</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2019</span> <br>
+                                                    oak <br>
+                                                    lemon <br>
+                                                    apricot <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="reserve-chenin-blanc" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve chenin blanc</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2019</span> <br>
+                                                    apple <br>
+                                                    quince <br>
+                                                    pineapple <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="reserve-chardonnay" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve chardonnay</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2019</span> <br>
+                                                    spiced citrus <br>
+                                                    caramel <br>
+                                                    warm spices <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="reserve-shiraz" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve Shiraz</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2015</span> <br>
+                                                    coffee <br>
+                                                    oak <br>
+                                                    sweet spice <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="reserve-tempranillo" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve Tempranillo</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2020</span> <br>
+                                                    herbal <br>
+                                                    caramel <br>
+                                                    dark fruit <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="reserve-cabernet-sauvignon" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve cabernet sauvignon</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2016</span> <br>
+                                                    dark fruit <br>
+                                                    coffee <br>
+                                                    dark chocolate <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                        <div id="reserve-proprietor-malbec" class="cardd">
+                                            <div class="content">
+                                                <h2 class="title">Reserve Proprietor Malbec</h2>
+                                                <p class="font-nunito"> <span class="text-[#CDAE6A]">2022</span> <br>
+                                                    dark berry <br>
+                                                    coffee <br>
+                                                    caramel <br>
+                                                </p>
+                                                <a href="product.php" onclick="fetchData(this.parentNode.parentNode.id)" class="animBtnCard themeA">details</a>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div id="test">
+                
+            </div>
+
+            <!-- Footer -->
+            <footer id="contact"
+                class="footer footer-center relative p-10 bg-white text-black bg-footer-background bg-cover bg-center">
+                <div class="absolute inset-0 bg-white opacity-75 -z-1"></div>
+                <div class="relative z-10">
+                    <div>
+                        <h2 class="font-cg text-4xl">Get In Touch</h2>
+                        <p class="p-1 font-nunito text-sm">Every bottle filled with pride for your enjoyment</p>
+                        <p class="m-4">
+                            Klein Simonsvlei Farm
+                            Klapmuts – Simondium Road, Klapmuts, 7625
+                            Western Cape, South Africa
+                        </p>
+                        <div class="tooltip tooltip-right" data-tip="Click to Copy">
+                            <a href="#" class="text-[#CDAE6A] block" onclick="copyNumber()">+27(0)21 875 5419</a>
+                        </div>
+                        <a href="mailto:wine@nieljoubert.co.za" class="text-[#CDAE6A] block">wine@nieljoubert.co.za</a>
+                    </div>
+                    <div class="grid grid-flow-col gap-4">
+                        <!-- The links in the footer -->
+                        <a class="link link-underline" href="about-us.html">About us</a>
+                    </div>
+                    <div>
+                        <p>Copyright © 2023 - Created by Mathys Basson</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="drawer-side">
+            <label for="my-drawer-3" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 bg-base-100">
+                <!-- Sidebar content here -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="wines.html">Our Wines</a></li>
+                <li><a href="loginRegister.php">Login</a></li>
+                <li><a href="cart.php">Cart</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="accordionScript.js"></script>
+</body>
+
+</html>
