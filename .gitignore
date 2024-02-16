@@ -1,0 +1,11 @@
+# Ignore Visual Studio Code settings
+.vscode
+
+# Ignore all files with the .txt extension
+*.txt
+
+# Ignore the node_modules directory
+node_modules
+
+# Ignore the git folder
+.git
